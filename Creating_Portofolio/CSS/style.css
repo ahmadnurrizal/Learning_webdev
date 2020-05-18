@@ -1,0 +1,98 @@
+/* import fonts from CSS file */
+
+@import url(./font.css);
+
+/* CSS Variables */
+
+@import url(./partial/_variables.css);
+
+/* import Global style */
+
+@import url(./partial/_global.css);
+
+/* Star Navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+    /*ngatur posisi logo tel-u*/
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    /*ngatur posisi navbar*/
+    padding: 1rem 10rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    /*ngatur tiap tab di navbar*/
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+    /* memberikan warna pada tab home*/
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    /* Memberikan warna ketika tab di klik*/
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* End Navigation */
+
+
+/*.site-menu .site-banner {
+    background: url(../img/tel-u.jpg) no-repeat;
+    background-size: contain;
+}*/
+
+
+/* ======= Main Menu ========*/
+
+.site-menu {
+    position: relative;
+    left: 120px;
+}
+
+.site-menu .site-banner {
+    padding-top: 5%;
+}
+
+.site-menu .site-banner .site-title h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.site-menu .site-banner .site-title h3::after {
+    content: " ";
+    height: 2px;
+    width: 19vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+}
+
+.site-menu .site-banner .site-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.site-menu .site-banner .site-title h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
