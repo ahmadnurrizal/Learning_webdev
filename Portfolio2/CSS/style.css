@@ -1,0 +1,211 @@
+/* import fonts from CSS file */
+
+@import url(./font.css);
+
+/* CSS Variables */
+
+@import url(./partial/_variables.css);
+
+/* import Global style */
+
+@import url(./partial/_global.css);
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Star Navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+	/*ngatur posisi logo tel-u*/
+	padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+	/*ngatur posisi navbar*/
+	padding: 1rem 10rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+	/*ngatur tiap tab di navbar*/
+	font-family: var(--roboto);
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 1.7rem;
+	color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+	/* memberikan warna pada tab home*/
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+	/* Memberikan warna ketika tab di klik*/
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+/* End Navigation */
+
+/*.site-menu .site-banner {
+    background: url(../img/tel-u.jpg) no-repeat;
+    background-size: contain;
+}*/
+
+/* ======= Main Menu ========*/
+
+.site-menu {
+	position: relative;
+	left: 120px;
+}
+
+.site-menu .site-banner {
+	padding-top: 5%;
+}
+
+.site-menu .site-banner .site-title {
+	margin-top: 5%;
+}
+
+.site-menu .site-banner .site-title h3 {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.site-menu .site-banner .site-title h3::after {
+	content: " ";
+	height: 2px;
+	width: 16vw;
+	background: black;
+	display: inline-block;
+	margin-left: 5%;
+	transform: translateY(-7px);
+	-webkit-transform: translateY(-7px);
+	-moz-transform: translateY(-7px);
+	-ms-transform: translateY(-7px);
+	-o-transform: translateY(-7px);
+}
+
+.site-menu .site-banner .site-title h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.site-menu .site-banner .site-title h4 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.site-menu .site-banner .button {
+	margin-top: 2rem;
+}
+
+/*===== About Area ====*/
+
+.site-menu .about-area {
+	padding: 1rem 2rem;
+}
+
+.site-menu .about-area .about-title h2>span {
+	display: block;
+	font: normal bold 40px/60px var(--roboto);
+	letter-spacing: 16px;
+}
+
+.site-menu .about-image {
+	margin-top: 5rem;
+}
+
+.services-area h1 {
+	font-weight: bold;
+	padding: 2rem 0;
+}
+
+.services-area .services-title {
+	padding-top: 7rem;
+	margin-right: 6rem;
+}
+
+.services-area .row-services {
+	margin-left: -11rem;
+}
+
+.site-menu .services-area .services {
+	background: rgba(255, 248, 248, 0.97);
+	padding: 1rem 0;
+	width: 16rem 0;
+	margin: 5rem 2rem;
+	transition: box-shadow .7s ease;
+}
+
+.site-menu .services-area .services:hover {
+	box-shadow: var(--box-shadow);
+}
+
+/* Subscribe me */
+
+.site-menu .subscribe-us-area .subscribe {
+	background: url(../img/sss.jpg) no-repeat;
+	padding: 5rem 0;
+	margin: 3rem auto;
+	margin-left: 5rem;
+}
+
+.site-menu .subscribe-us-area .subscribe .subscribe-title h4 {
+	font: normal 700 30px/ 30px var(--roboto);
+	color: whitesmoke;
+}
+
+.site-menu .subscribe-us-area .subscribe .subscribe-title p {
+	color: whitesmoke;
+	padding: 1rem 4rem;
+}
+
+.site-menu .subscribe-us-area .subscribe form .input-textbox input {
+	width: 400px;
+	padding: 1.5rem 1rem;
+	border: 1px solid whitesmoke;
+	background: transparent;
+	color: white;
+	font: normal 500 17px/20px var(--roboto);
+}
+
+.site-menu .subscribe-us-area .subscribe form .input-textbox input::placeholder {
+	color: whitesmoke;
+}
+
+.site-menu .subscribe-us-area .subscribe form .btn-submit button {
+	background: whitesmoke;
+	color: #000;
+	padding: 10px 2rem;
+	border: none;
+}
+
+/* End subscribe me */
+
+footer.footer-area .social a {
+	padding: 2rem 1rem;
+}
+
+footer.footer-area .social h5 {
+	color: var(--primary-color);
+	font: normal bold 30px/60px var(--roboto);
+	letter-spacing: 5px;
+}
+
+footer.footer-area {
+	margin-top: 5rem;
+	background: url(/img/ss.jpg);
+	background-position: 0rem -1rem;
+	margin-bottom: 2rem;
+}
+
+footer.footer-area .copyrights .para {
+	margin: 2rem 0;
+}
